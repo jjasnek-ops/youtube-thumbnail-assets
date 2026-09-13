@@ -1,0 +1,13 @@
+asset,field,value,source_url,source_note
+Video thumbnail,Recommended resolution,3840 x 2160,https://support.google.com/youtubecreatorstudio/answer/72431?co=GENIE.Platform%3DDesktop&hl=en,YouTube Studio Help — Add custom thumbnails
+Video thumbnail,Aspect ratio,16:9,https://support.google.com/youtubecreatorstudio/answer/72431?co=GENIE.Platform%3DDesktop&hl=en,YouTube Studio Help — Add custom thumbnails
+Video thumbnail,Minimum width,640 px,https://support.google.com/youtubecreatorstudio/answer/72431?co=GENIE.Platform%3DDesktop&hl=en,YouTube Studio Help — Add custom thumbnails
+Video thumbnail,Listed formats,JPG and PNG,https://support.google.com/youtubecreatorstudio/answer/72431?co=GENIE.Platform%3DDesktop&hl=en,The page says formats such as JPG or PNG
+Video thumbnail,Upload limit,2 MB mobile / 50 MB desktop video Shorts and podcast,https://support.google.com/youtubecreatorstudio/answer/72431?co=GENIE.Platform%3DDesktop&hl=en,The limit is recorded as stated on the page
+Shorts thumbnail,Recommended resolution,2160 x 3840,https://support.google.com/youtubecreatorstudio/answer/72431?co=GENIE.Platform%3DDesktop&hl=en,YouTube Studio Help — Add custom thumbnails
+Shorts thumbnail,Minimum height,640 px,https://support.google.com/youtubecreatorstudio/answer/72431?co=GENIE.Platform%3DDesktop&hl=en,YouTube Studio Help — Add custom thumbnails
+Channel banner,Minimum upload,2048 x 1152,https://support.google.com/youtube/answer/10456525?hl=en,YouTube Help — Manage your channel branding
+Channel banner,Aspect ratio,16:9,https://support.google.com/youtube/answer/10456525?hl=en,YouTube Help — Manage your channel branding
+Channel banner,Safe area at minimum canvas,1235 x 338,https://support.google.com/youtube/answer/10456525?hl=en,Text and logos safe area
+Channel banner,Recommended for TV,2560 x 1440,https://support.google.com/youtube/answer/10456525?hl=en,YouTube wording
+Channel banner,File size limit,6 MB or less,https://support.google.com/youtube/answer/10456525?hl=en,YouTube Help — Manage your channel branding

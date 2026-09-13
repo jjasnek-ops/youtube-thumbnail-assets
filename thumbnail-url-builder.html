@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>YouTube Thumbnail URL Builder</title>
+    <style>
+      :root { color-scheme: light; font-family: system-ui, sans-serif; line-height: 1.5; }
+      body { max-width: 760px; margin: 0 auto; padding: 2rem 1rem; color: #172033; background: #f5f7f2; }
+      h1 { line-height: 1.05; }
+      label { display: block; font-weight: 700; margin: 1rem 0 .4rem; }
+      input, button { font: inherit; }
+      input { width: 100%; box-sizing: border-box; padding: .8rem; border: 1px solid #9ca8b8; border-radius: .6rem; }
+      button { margin-top: 1rem; padding: .75rem 1rem; border: 0; border-radius: .6rem; background: #c8ff43; color: #101728; font-weight: 800; cursor: pointer; }
+      table { width: 100%; border-collapse: collapse; margin-top: 1.5rem; background: #fff; }
+      th, td { padding: .65rem; border-bottom: 1px solid #dce2e8; text-align: left; vertical-align: top; }
+      code { overflow-wrap: anywhere; }
+      .note { color: #536176; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p class="note">Browser-only utility · no upload</p>
+      <h1>YouTube Thumbnail URL Builder</h1>
+      <p>Enter a YouTube video ID to construct the direct thumbnail file URLs observed in the reference CSV.</p>
+      <label for="videoId">Video ID</label>
+      <input id="videoId" value="dQw4w9WgXcQ" autocomplete="off" spellcheck="false" />
+      <button id="build" type="button">Build URLs</button>
+      <div id="output" aria-live="polite"></div>
+    </main>
+    <script>
+      const files = [
+        ["maxresdefault.jpg", "1280 × 720"],
+        ["sddefault.jpg", "640 × 480"],
+        ["hqdefault.jpg", "480 × 360"],
+        ["mqdefault.jpg", "320 × 180"],
+        ["default.jpg", "120 × 90"]
+      ];
+      const idField = document.querySelector("#videoId");
+      const output = document.querySelector("#output");
+      function build() {
+        const videoId = idField.value.trim();
+        if (!/^[A-Za-z0-9_-]{6,}$/.test(videoId)) {
+          output.textContent = "Enter a video ID using letters, numbers, hyphens, or underscores.";
+          return;
+        }
+        const rows = files.map(([file, dimensions]) => {
+          const url = `https://i.ytimg.com/vi/${videoId}/${file}`;
+          return `<tr><td>${file}</td><td>${dimensions}</td><td><a href="${url}" target="_blank" rel="noreferrer"><code>${url}</code></a></td></tr>`;
+        }).join("");
+        output.innerHTML = `<table><thead><tr><th>File</th><th>Observed test dimensions</th><th>URL</th></tr></thead><tbody>${rows}</tbody></table>`;
+      }
+      document.querySelector("#build").addEventListener("click", build);
+      build();
+    </script>
+  </body>
+</html>

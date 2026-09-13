@@ -1,0 +1,6 @@
+filename,cdn_url_template,observed_width_px,observed_height_px,observed_video_id,observed_on,availability_note
+maxresdefault.jpg,https://i.ytimg.com/vi/{video_id}/maxresdefault.jpg,1280,720,dQw4w9WgXcQ,2026-09-13,Loaded successfully in the browser test
+sddefault.jpg,https://i.ytimg.com/vi/{video_id}/sddefault.jpg,640,480,dQw4w9WgXcQ,2026-09-13,Loaded successfully in the browser test
+hqdefault.jpg,https://i.ytimg.com/vi/{video_id}/hqdefault.jpg,480,360,dQw4w9WgXcQ,2026-09-13,Loaded successfully in the browser test
+mqdefault.jpg,https://i.ytimg.com/vi/{video_id}/mqdefault.jpg,320,180,dQw4w9WgXcQ,2026-09-13,Loaded successfully in the browser test
+default.jpg,https://i.ytimg.com/vi/{video_id}/default.jpg,120,90,dQw4w9WgXcQ,2026-09-13,Loaded successfully in the browser test
