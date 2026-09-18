@@ -1,0 +1,4 @@
+asset,page_url,format,purpose,source_note
+Local thumbnail resize workflow,https://feedthumbnail.com/youtube-thumbnail-resizer,HTML/browser canvas,Resize one local image and export a checked JPG,Live page workflow
+Editable end-screen workflow,https://feedthumbnail.com/youtube-end-screen-template,HTML/browser canvas,Edit headline colors supporting line and card positions then export a PNG still,Live page workflow
+Thumbnail starting canvas,https://feedthumbnail.com/youtube-thumbnail-resizer,SVG,Editable 1280 x 720 composition starting point,Original repository asset
