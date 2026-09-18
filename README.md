@@ -1,17 +1,20 @@
 # YouTube Thumbnail Assets
 
-A small, dependency-free reference set for building browser tools around YouTube thumbnail files and upload specifications.
+A small, dependency-free reference set for browser-based YouTube creator image workflows. The companion tools are published at [Feed Thumbnail](https://feedthumbnail.com/).
 
 ## What's here
 
 - `data/youtube-thumbnail-files.csv` — browser-observed thumbnail filenames, URL templates, and natural image dimensions from one real video test.
 - `data/youtube-upload-specs.csv` — official upload guidance transcribed from YouTube Help pages, with the source URL kept beside each row.
+- `data/page-assets.csv` — a factual index of the two new browser workflows and the reusable starting asset.
 - `docs/thumbnail-spec-notes.md` — practical notes that separate published guidance from gaps the official pages do not define.
+- `docs/new-page-assets.md` — usage notes for the local thumbnail resizer and editable end-screen workflow.
+- `assets/youtube-thumbnail-template-1280x720.svg` — an editable thumbnail composition starting point.
 - `tools/thumbnail-url-builder.html` — a no-dependency browser tool that turns a video ID into the tested CDN URL variants.
 
 The dimensions in the thumbnail CSV were read from images loaded in a browser from `i.ytimg.com` for video ID `dQw4w9WgXcQ` on 2026-09-13. They are observations for that test video, not a promise that every video exposes every filename or a substitute for an official YouTube API contract.
 
-For an interactive browser-only downloader and preview workflow, see [Thumbnail Tester](https://feedthumbnail.com/youtube-thumbnail-downloader).
+For the interactive browser-only workflows and the latest page-level links, start at the project homepage.
 
 ## Use the URL builder
 
